@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <meta charset="utf-8">
+        <title>TODO list</title>
         <style>
             h1 {
                 text-align:center;
@@ -11,10 +10,23 @@
             h3 {
                 text-transform: uppercase;
             }
-            li {
-                overflow: hidden;
-                padding: 20px 0;
-                border-bottom: 1px solid #eee;
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+            ul li {
+                cursor: pointer;
+                position: relative;
+                padding: 12px 8px 12px 40px;
+                background: #eee;
+                font-size: 18px;
+                transition: 0.2s;
+            }
+            ul li:nth-child(odd) {
+                background: #f9f9f9;
+            }
+            ul li:hover {
+                background: #ddd;
             }
         </style>
     </head>
@@ -29,6 +41,9 @@
         <h3>Done</h3>
         <ul>
             <li>Put the mittens on the kittens</li>
-        </ul>    
+        </ul>
     </body>
 </html>
+
+
+    
